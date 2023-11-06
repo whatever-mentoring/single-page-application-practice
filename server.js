@@ -9,4 +9,6 @@ app.get('/*', (req, res) => {
   res.sendFile(path.resolve('frontend', 'index.html'));
 });
 
-app.listen(process.env.PORT || 3000, () => console.log('서버 작동 중'));
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => console.log(`서버 작동 중 http://localhost:${PORT}`));
