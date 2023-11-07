@@ -1,0 +1,46 @@
+{
+  "data": [
+    {
+      "articleId": 1,
+      "thumbnailImg": "https://about.daangn.com/static/db0c53679fc20a81862918b0d4a7205f/a9bae/f0ab7982-038b-44e6-90b1-f38a35bff505_ceo-h.avif",
+      "title": "당근이 지역에 진심인 이유 | 당근 CEO 인터뷰",
+      "subTitle": "우리는 언제나, 동네에서 살아간다",
+      "catergories": ["문화"]
+    },
+    {
+      "articleId": 2,
+      "thumbnailImg": "https://about.daangn.com/static/631745c129852abe925a53ea704a99e1/ae805/6d5f990b-82df-4125-bad0-40fd3d33729b_judy-hh.avif",
+      "title": "‘일 잘하는 법’을 많이 고민한 조직이 채택한 방법론",
+      "subTitle": "당근 서비스 운영실이 일하는 방식① Shape up과 소화능력",
+      "catergories": ["문화"]
+    },
+    {
+      "articleId": 3,
+      "thumbnailImg": "https://about.daangn.com/static/a63fba8fd1f3cd29ba07d2808faa6175/a9bae/3b8d5b45-c81f-4007-b3ed-7c410ba7b91d_img_1160_650.avif",
+      "title": "혹시...? 네, ‘당근’입니다! 🥕",
+      "subTitle": "당근마켓에서 당근으로, 리브랜딩에 대한 모든 것",
+      "catergories": ["서비스"]
+    },
+    {
+      "articleId": 4,
+      "thumbnailImg": "https://about.daangn.com/static/cf2c459137a52b18d55689d12374e33e/ad7b9/0405df96-6410-4c95-873e-7e47f10d08e7_thumb_job-OKR.avif",
+      "title": "당근알바 성장 비결을 공개합니다",
+      "subTitle": "OKR, 어렵게 느껴진 적 있다면",
+      "catergories": ["서비스"]
+    },
+    {
+      "articleId": 5,
+      "thumbnailImg": "https://about.daangn.com/static/790627ecbc07843b8768f6669f5be4e2/ad7b9/28b5821b-67f3-4e7f-8283-601b747b350d_jamie-vv.avif",
+      "title": "회사를 옮긴다는 건 이민과도 같아서",
+      "subTitle": "11년 차 당근 프로덕트 디자이너 인터뷰",
+      "catergories": ["커리어"]
+    },
+    {
+      "articleId": 6,
+      "thumbnailImg": "https://about.daangn.com/static/940330b4a78485876878c16cc3753c2d/ad7b9/9a3ab00c-5835-425d-ab7b-611bc5b0da9c_growth-v.avif",
+      "title": "당근에서 커리어를 시작한 비전공자 개발자 이야기",
+      "subTitle": "신입 개발자가 성장하기 좋은 환경은 어떤 모습일까?",
+      "catergories": ["커리어"]
+    }
+  ]
+}
