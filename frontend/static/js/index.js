@@ -3,7 +3,7 @@ import Company from './CompanyPage/Company.js';
 import Culture from './CulturePage/Culture.js';
 import Service from './ServicePage/Service.js';
 import Blog from './BlogPage/Blog.js';
-import PostView from './views/PostView.js';
+import Post from './PostPage/Post.js';
 import Jobs from './JobsPage/Jobs.js';
 import Header from './components/Header.js';
 
@@ -33,7 +33,7 @@ const router = async () => {
     { path: '/culture/', view: Culture },
     { path: '/service/', view: Service },
     { path: '/blog/', view: Blog },
-    { path: '/posts/:id', view: PostView },
+    { path: '/blog/:id', view: Post },
     { path: '/jobs/', view: Jobs },
   ];
 
