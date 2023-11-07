@@ -61,6 +61,7 @@ h4 {
 a {
   text-decoration-skip-ink: auto;
   color: currentColor;
+  text-decoration: none;
 }
 
 /* Make images easier to work with */
@@ -86,4 +87,12 @@ textarea:not([rows]) {
 /* Anything that has been anchored to should have extra scroll margin */
 :target {
   scroll-margin-block: 5ex;
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -user-drag: none;
 }
