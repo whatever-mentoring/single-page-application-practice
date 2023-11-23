@@ -13,15 +13,14 @@ class Blog extends AbstractView {
     return response.json();
   }
 
+  async getCategories() {
+    const response = await fetch('http://localhost:3000/api/categories');
+    return response.json();
+  }
+
   async getHtml() {
     const { data } = await this.getArticles();
-
-    const categories = [
-      { id: 0, text: '전체', path: '/blog/#_filter' },
-      { id: 1, text: '문화', path: '/blog/category/culture/#_filter' },
-      { id: 2, text: '서비스', path: '/blog/category/service/#_filter' },
-      { id: 3, text: '커리어', path: '/blog/category/career/#_filter' },
-    ];
+    const { categories } = await this.getCategories();
 
     return `
         <div class="blog__wrapper">
@@ -31,25 +30,40 @@ class Blog extends AbstractView {
           <div class="tag__box">
             ${categories
               .map((category) => {
+                const isActive = window.location.pathname === category.path;
                 return `
-                <a href="${category.path}">
-                  ${Tag(category)}
+                <a href="${category.path}" data-link>
+                  ${Tag({ text: category.text, isActive })}
                 </a>
               `;
               })
               .join('')}
           </div>
           <div class="card__box">
-              ${data
-                .map((category) => {
-                  const cardPath = category.articleId - 1;
-                  return `
-                  <a href="/blog/${data[cardPath].articleId}" data-link>
-                    ${Card(category)}
-                  </a>
-                `;
-                })
-                .join('')}
+          ${
+            data
+              .filter((article) => {
+                const isActive = window.location.pathname === article.categories;
+                return isActive;
+              })
+              .map(
+                (article) => `
+              <a href="/blog/${article.articleId}" data-link>
+                ${Card(article)}
+              </a>
+            `,
+              )
+              .join('') ||
+            data
+              .map(
+                (article) => `
+              <a href="/blog/${article.articleId}" data-link>
+                ${Card(article)}
+              </a>
+            `,
+              )
+              .join('')
+          }
           </div>
         </div>
     `;

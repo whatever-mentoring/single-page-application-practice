@@ -5,6 +5,12 @@ const app = express();
 
 app.use('/static', express.static(path.resolve(__dirname, 'frontend', 'static')));
 
+app.get('/api/categories', (req, res) => {
+  const filePath = path.resolve('frontend/data', 'categories.json');
+
+  res.json(JSON.parse(fs.readFileSync(filePath, 'utf-8')));
+});
+
 app.get('/api/articles', (req, res) => {
   const filePath = path.resolve('frontend/data', 'articles.json');
 
