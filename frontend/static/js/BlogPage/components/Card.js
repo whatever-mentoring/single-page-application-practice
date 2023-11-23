@@ -7,7 +7,7 @@ function Card(props) {
             <p>${props.subTitle}</p>
         </div>
         <div class="card__samlltagbox">
-            <div class="card__smalltag">${props.catergories}</div>
+            <div class="card__smalltag">${props.tag}</div>
         </div>
     </article>
     `;
