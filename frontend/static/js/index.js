@@ -33,6 +33,10 @@ const router = async () => {
     { path: '/culture/', view: Culture },
     { path: '/service/', view: Service },
     { path: '/blog/', view: Blog },
+    { path: '/blog/category/', view: Blog },
+    { path: '/blog/category/culture/', view: Blog },
+    { path: '/blog/category/service/', view: Blog },
+    { path: '/blog/category/career/', view: Blog },
     { path: '/blog/:id', view: Post },
     { path: '/jobs/', view: Jobs },
   ];
@@ -72,6 +76,5 @@ document.addEventListener('DOMContentLoaded', () => {
       navigateTo(targetLink.href);
     }
   });
-
   router();
 });
