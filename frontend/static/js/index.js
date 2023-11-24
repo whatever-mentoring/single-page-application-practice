@@ -6,6 +6,7 @@ import Blog from './BlogPage/Blog.js';
 import Post from './PostPage/Post.js';
 import Jobs from './JobsPage/Jobs.js';
 import Header from './components/Header.js';
+import Footer from './components/Footer.js';
 
 const pathToRegex = (path) =>
   new RegExp('^' + path.replace(/\//g, '\\/').replace(/:\w+/g, '(.+)') + '$');
@@ -59,10 +60,12 @@ const router = async () => {
 
   const view = new match.route.view(getParams(match));
   const header = new Header();
+  const footer = new Footer();
   const html = await view.getHtml();
   document.querySelector('#app').innerHTML = `
     ${header.getComponent()}
     ${html}
+    ${footer.getComponent()}
   `;
 };
 
