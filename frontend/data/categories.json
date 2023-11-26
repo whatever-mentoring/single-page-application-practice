@@ -1,0 +1,8 @@
+{
+  "categories": [
+    { "id": 0, "text": "전체", "path": "/blog/category/" },
+    { "id": 1, "text": "문화", "path": "/blog/category/culture/" },
+    { "id": 2, "text": "서비스", "path": "/blog/category/service/" },
+    { "id": 3, "text": "커리어", "path": "/blog/category/career/" }
+  ]
+}
